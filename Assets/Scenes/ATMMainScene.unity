@@ -2146,9 +2146,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '0
-
-'
+  m_Text: "0\uC6D0\n"
 --- !u!222 &918490385
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3055,6 +3053,7 @@ GameObject:
   - component: {fileID: 1435223605}
   - component: {fileID: 1435223604}
   - component: {fileID: 1435223603}
+  - component: {fileID: 1435223606}
   m_Layer: 5
   m_Name: 10000btn
   m_TagString: Untagged
@@ -3163,6 +3162,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1435223606}
+        m_TargetAssemblyTypeName: IncreaseMoney_btn, Assembly-CSharp
+        m_MethodName: OnClickButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1435223604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3201,6 +3212,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1435223601}
   m_CullTransparentMesh: 1
+--- !u!114 &1435223606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435223601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dee0a3b917f04cb4fadeffbdbe093b72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonText: {fileID: 1512946848}
 --- !u!1 &1442412422
 GameObject:
   m_ObjectHideFlags: 0
@@ -3400,6 +3424,7 @@ GameObject:
   - component: {fileID: 1512946847}
   - component: {fileID: 1512946849}
   - component: {fileID: 1512946848}
+  - component: {fileID: 1512946850}
   m_Layer: 5
   m_Name: balance_text
   m_TagString: Untagged
@@ -3424,8 +3449,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 99.03836, y: -117.430176}
-  m_SizeDelta: {x: 283.0897, y: 55.5688}
+  m_AnchoredPosition: {x: -88.01103, y: -131.1}
+  m_SizeDelta: {x: 170.4676, y: 55.5688}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1512946848
 MonoBehaviour:
@@ -3460,7 +3485,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0
+  m_Text: "\uD604\uC7AC \uC794\uC561 : "
 --- !u!222 &1512946849
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3469,6 +3494,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1512946846}
   m_CullTransparentMesh: 1
+--- !u!114 &1512946850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1512946846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dee0a3b917f04cb4fadeffbdbe093b72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonText: {fileID: 1512946848}
 --- !u!1 &1520436008
 GameObject:
   m_ObjectHideFlags: 0
@@ -3821,7 +3859,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 61.638306, y: -61.86017}
+  m_AnchoredPosition: {x: 77, y: -72}
   m_SizeDelta: {x: 357.89, y: 55.5688}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1646354685
