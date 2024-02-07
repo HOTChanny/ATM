@@ -35,7 +35,6 @@ public class MembershipRegistration : MonoBehaviour
 
         // PlayerPrefs를 사용하여 사용자 데이터를 저장
         PlayerPrefs.SetString(id, username);
-        PlayerPrefs.SetString(id, password);
         PlayerPrefs.Save();
 
         Debug.Log("사용자 등록 완료: " + username);
