@@ -19,12 +19,16 @@ public class IncreaseMoney_btn : MonoBehaviour
         balance = 50000;
         cash = 100000;
     }
-
-
-    void OnClick10()
+    private void Update()
     {
         balanceText.text = balance.ToString();
         cashText.text = cash.ToString();
+    }
+
+
+
+    public void OnClick10()
+    {
 
         if (cash > balance)
         {
@@ -37,10 +41,9 @@ public class IncreaseMoney_btn : MonoBehaviour
         }
     }
 
-        void OnClick30()
+        public void OnClick30()
         {
-            balanceText.text = balance.ToString();
-            cashText.text = cash.ToString();
+         
 
             if (cash > balance)
             {
@@ -52,6 +55,21 @@ public class IncreaseMoney_btn : MonoBehaviour
                 Debug.Log("ÀÜ¾× ºÎÁ·");
             }
         }
-  
+
+    public void OnClick50()
+    {
+
+
+        if (cash > balance)
+        {
+            balance = balance + 50000;
+            cash = cash - 50000;
+        }
+        else
+        {
+            Debug.Log("ÀÜ¾× ºÎÁ·");
+        }
+    }
+
 
 }
