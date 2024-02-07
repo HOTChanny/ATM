@@ -2381,6 +2381,7 @@ GameObject:
   - component: {fileID: 918490385}
   - component: {fileID: 918490384}
   - component: {fileID: 918490386}
+  - component: {fileID: 918490387}
   m_Layer: 5
   m_Name: currentMoney_text
   m_TagString: Untagged
@@ -2441,7 +2442,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 50000
+  m_Text: 100000
 --- !u!222 &918490385
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2460,6 +2461,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dee0a3b917f04cb4fadeffbdbe093b72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  balanceText: {fileID: 1512946848}
+  cashText: {fileID: 918490384}
+--- !u!114 &918490387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918490382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: feb7ba2948eb86e40bfe9e931306323b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   balanceText: {fileID: 1512946848}
@@ -3735,6 +3750,7 @@ GameObject:
   - component: {fileID: 1512946849}
   - component: {fileID: 1512946848}
   - component: {fileID: 1512946850}
+  - component: {fileID: 1512946851}
   m_Layer: 5
   m_Name: balance_text
   m_TagString: Untagged
@@ -3814,6 +3830,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dee0a3b917f04cb4fadeffbdbe093b72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  balanceText: {fileID: 1512946848}
+  cashText: {fileID: 918490384}
+--- !u!114 &1512946851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1512946846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: feb7ba2948eb86e40bfe9e931306323b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   balanceText: {fileID: 1512946848}
@@ -4475,6 +4505,7 @@ GameObject:
   - component: {fileID: 1863338442}
   - component: {fileID: 1863338441}
   - component: {fileID: 1863338440}
+  - component: {fileID: 1863338443}
   m_Layer: 5
   m_Name: 10000btn
   m_TagString: Untagged
@@ -4583,6 +4614,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1863338443}
+        m_TargetAssemblyTypeName: DecreasecreaseMoney_btn, Assembly-CSharp
+        m_MethodName: OnClick10
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1863338441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4621,6 +4664,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1863338438}
   m_CullTransparentMesh: 1
+--- !u!114 &1863338443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863338438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: feb7ba2948eb86e40bfe9e931306323b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  balanceText: {fileID: 1512946848}
+  cashText: {fileID: 918490384}
 --- !u!1 &1904132113
 GameObject:
   m_ObjectHideFlags: 0
@@ -4713,6 +4770,7 @@ GameObject:
   - component: {fileID: 1973952819}
   - component: {fileID: 1973952818}
   - component: {fileID: 1973952817}
+  - component: {fileID: 1973952820}
   m_Layer: 5
   m_Name: 50000btn
   m_TagString: Untagged
@@ -4821,6 +4879,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1973952820}
+        m_TargetAssemblyTypeName: DecreasecreaseMoney_btn, Assembly-CSharp
+        m_MethodName: OnClick50
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1973952818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4859,6 +4929,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1973952815}
   m_CullTransparentMesh: 1
+--- !u!114 &1973952820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1973952815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: feb7ba2948eb86e40bfe9e931306323b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  balanceText: {fileID: 1512946848}
+  cashText: {fileID: 918490384}
 --- !u!1 &1995882296
 GameObject:
   m_ObjectHideFlags: 0
@@ -5109,6 +5193,7 @@ GameObject:
   - component: {fileID: 2056647692}
   - component: {fileID: 2056647691}
   - component: {fileID: 2056647690}
+  - component: {fileID: 2056647693}
   m_Layer: 5
   m_Name: 30000btn
   m_TagString: Untagged
@@ -5217,6 +5302,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 2056647693}
+        m_TargetAssemblyTypeName: DecreasecreaseMoney_btn, Assembly-CSharp
+        m_MethodName: OnClick30
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &2056647691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5255,3 +5352,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2056647688}
   m_CullTransparentMesh: 1
+--- !u!114 &2056647693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2056647688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: feb7ba2948eb86e40bfe9e931306323b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  balanceText: {fileID: 1512946848}
+  cashText: {fileID: 918490384}
